@@ -3,9 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <h1 id="title"></h1>
+  <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic veniam quisquam voluptatibus aliquid? Expedita veritatis voluptatum sapiente voluptatem libero officiis molestias rem exercitationem, et aliquid tenetur quidem quisquam quos quae!</p>
+  <form id="survey-form" action="">
+    <fieldset>
+      <label id="name-label" for="name">Enter your name
+        <input id="name" type="text" placeholder="Jimmy" required>
+      </label>
+      <label id="email-label" for="email">Enter your email address
+        <input id="email" type="email" placeholder="example@gmail.com" required>
+      </label>
+      <label id="number-label" for="number" >Enter your age
+        <input type="number" min="18" max="100" placeholder="50" required>
+      </label>
+    </fieldset>
+    <fieldset>
+      <select name="" id="dropdown">
+        <option value="">nothing</option>
+        <option value="1">variant one</option>
+        <option value="2">variant two</option>
+      </select>
+      <label for="male">Male
+        <input id="male" type="radio" name="gender">
+      </label>
+      <label for="female">Female
+        <input id="female" type="radio" name="gender">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="info">Write something about yourself
+        <textarea name="about" id="info" cols="30" rows="10"></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit">
+  </form>
 </body>
 </html>
